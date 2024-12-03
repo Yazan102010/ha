@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dashboard Form Styles */
+.dashboard {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-container label {
+    font-size: 14px;
+    color: #555;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container button {
+    grid-column: span 2;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Profile Card Styles */
+.profile-card {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-image {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.profile-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-header p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Action Buttons Styles */
+.profile-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.action-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+
+/* Connect Button Styles */
+.connect-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.connect-button:hover {
+    background-color: #0056b3;
+}
+
+/* Social Links Styles */
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social-icon p {
+    margin-left: 10px;
+    color: #333;
+    font-size: 14px;
+}
+
+.social-icon svg {
+    font-size: 24px;
+}
+
+.social-icon:hover p {
+    color: #007bff;
+}
+
+.social-icon:hover svg {
+    color: #007bff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    /* Ensures the icon and input are aligned */
+}
+
+.phone-input input {
+    width: 0;
+    /* Hide the input width */
+    height: 0;
+    /* Hide the input height */
+    opacity: 0;
+    /* Make the input completely invisible */
+    position: absolute;
+    /* Position it off-screen so it is still interactive */
+}
+
+.phone-input svg {
+    margin-right: 8px;
+    /* Add space between the icon and input (if needed) */
+    cursor: pointer;
+    /* Optionally, change the cursor to pointer */
+}
